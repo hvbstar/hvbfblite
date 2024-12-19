@@ -1,3 +1,17 @@
 #!name=Facebook Lite Config by Hoang Van Bao (HVB)
 #!desc=Config for accessing Facebook Lite through Shadowrocket - Created by HVB
-#!url=https://raw.githubusercontent.com/hvbstar/hvbfblite/main/facebook_lite_hvb.conf
+
+[General]
+bypass-system = true
+bypass-tun = true
+dns-server = system, 8.8.8.8, 8.8.4.4
+
+[Rule]
+DOMAIN-SUFFIX,facebook.com,DIRECT
+DOMAIN-SUFFIX,fbcdn.net,DIRECT
+DOMAIN-SUFFIX,fb.com,DIRECT
+DOMAIN-SUFFIX,facebook.net,DIRECT
+DOMAIN-KEYWORD,facebook,DIRECT
+
+[Host]
+facebook.com = 157.240.229.35
